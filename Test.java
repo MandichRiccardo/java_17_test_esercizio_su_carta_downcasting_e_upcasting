@@ -2,29 +2,29 @@ public class Test{
     public static void main(String[] args) {
 
                             //dichiarazioni degli oggetti
-        A a1, a2, a3, a4;
-        B b;
-        C c1, c2;
-        D d;
+        Animale animale1, animale2, animale3, animale4;
+        Cane cane;
+        Gatto gatto1, gatto2;
+        Persiano persiano;
 
                             //assegnazioni
-        a1 = new A();
-        a2 = new B();
-        a3 = new C();
-        a4 = new D();
-        b = new B();
-        c1 = new C();
-        c2 = new D();
-        d = new D();
+        animale1 = new Animale();
+        animale2 = new Cane();
+        animale3 = new Gatto();
+        animale4 = new Persiano();
+        cane = new Cane();
+        gatto1 = new Gatto();
+        gatto2 = new Persiano();
+        persiano = new Persiano();
 
                             //test da verificare
 
-        //b = a3;           //errore a compilazione
-        a1 = c1;            //funziona
-        a1 = b;             //funziona
-        //b = c2;           //errore a compilazione
-        //d = (D) c1;       //errore runtime
-        c2 = d;             //funziona
-        c1 = (C) a3;        //funziona ma necessita di down casting
+        //cane = animale3;                  //errore a compilazione
+        animale1 = gatto1;                  //funziona
+        animale1 = cane;                    //funziona
+        //cane = gatto2;                    //errore a compilazione
+        //persiano = (Persiano) gatto1;     //errore runtime
+        Gatto2 = persiano;                  //funziona
+        gatto1 = (Gatto) animale3;          //funziona ma necessita di down casting
     }
 }
